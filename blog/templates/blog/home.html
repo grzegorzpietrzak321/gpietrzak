@@ -1,14 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Blogs homepage!</title>
-</head>
-<body>
+{% extends "base.html" %}
 
+{% block content %}
 <h1>Hello {{ user }}. New blogs homepage!</h1>
 These are my articles:
-<table border="1">
+<table border="0">
 
     {% for item in articles %}
         <tr>
@@ -30,5 +25,5 @@ These are my articles:
 
 
 </table>
-</body>
-</html>
+
+{% endblock %}
