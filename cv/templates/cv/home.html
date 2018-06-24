@@ -1,10 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>My curriculum vitae! </title>
-</head>
-<body>
-<h1>My curriculum vitae!</h1>
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block title %}
+Curriculum vitae
+{% endblock %}
+
+{% block content %}
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Curriculum vitae</h1>
+            <p>Grzegorz Pietrzak</p>
+            Musisz być zalogowany aby podejrzeć CV!
+        </div>
+    </div>
+{% endblock %}

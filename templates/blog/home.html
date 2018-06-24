@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Hello {{ user }}. New blogs homepage!</h1>
+These are my articles:
+<table border="0">
+
+    {% for item in articles %}
+        <tr>
+            <td class="title">{{ item.title }}</td>
+        </tr>
+        <tr>
+            <td class="datetime">{{ item.posted_date }}</td>
+        </tr>
+        <tr>
+            <td class="author">{{ item.author }}</td>
+        </tr>
+        <tr>
+            <td class="content">{{ item.content }}</td>
+        </tr>
+        <tr>
+        <td></td>
+        </tr>
+    {% endfor %}
+
+
+</table>
+
+{% endblock %}
